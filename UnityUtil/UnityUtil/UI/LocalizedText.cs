@@ -65,6 +65,11 @@ namespace UnityUtil.UI
             }
         }
 
+        protected void OnDestroy()
+        {
+            Texts.Remove(this);
+        }
+
         public enum Language
         {
             EN = 0,
